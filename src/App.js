@@ -1,12 +1,15 @@
 import './App.css';
-import SearchWeather from './SearchWeather';
+import TopLayout from './TopLayout';
+
 
 function App() {
 
 
 
   return (
-    <SearchWeather />
+    <>
+      <TopLayout />
+    </>
   );
 }
 
