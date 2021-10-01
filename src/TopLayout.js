@@ -5,6 +5,8 @@ export default function TopLayout() {
     let [query, setQuery] = useState('')
     let [data, setData] = useState({})
 
+    // testinggg
+
     async function fetchData(query) {
         console.log(query)
         let response = await fetch(`https://community-open-weather-map.p.rapidapi.com/weather?q=${query}&units=imperial`, {
