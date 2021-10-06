@@ -9,12 +9,8 @@ export default function TopLayout() {
 
     async function fetchData(query) {
         console.log(query)
-        let response = await fetch(`https://community-open-weather-map.p.rapidapi.com/weather?q=${query}&units=imperial`, {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-                "x-rapidapi-key": "c48691588amshb4eaffd22ed7555p1db500jsn32802bce1da9"
-            }
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=523fce137a4bd0a638eb90ddbca2417f&units=imperial`, {
+            "method": "GET"
         })
         let data = await response.json()
         return data;
@@ -56,7 +52,7 @@ export default function TopLayout() {
                         <div className='weather'>
 
                             <div className='info'>{data.weather[0].main}</div><div><img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} /></div>
-                            <div className='temp'><h2>{Math.round(data.main.temp)} </h2> <sup>&deg;C</sup></div>
+                            <div className='temp'><h2>{Math.round(data.main.temp)} </h2> <sup>&deg;F</sup></div>
                         </div>
                     </>
                 )}
