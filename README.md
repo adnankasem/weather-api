@@ -1,3 +1,38 @@
+# Weather App
+
+## General Information
+
+This weather app calls the weather api using axios once the user has typed an input and hit 'Enter'. The user's input is dynamically added to the query and returns a card with weather info for that city. 
+
+Live demo here: https://my-weather-opw-app.netlify.app/
+
+## Technologies Used
+
+HTML
+CSS
+Javascrip
+React
+
+## Features
+- Queries weather api to return weather info for a city
+- Some of the data it returns is the temperature, an icon and text of the weather
+- Responsive design that looks great on all screen sizes
+
+## Project Status
+Project is: _in progress_ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
