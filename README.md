@@ -10,7 +10,7 @@ Live demo here: https://my-weather-opw-app.netlify.app/
 
 HTML
 CSS
-Javascrip
+Javascript
 React
 
 ## Features
@@ -27,6 +27,7 @@ Project is: _in progress_
 
 
 
+----------React -----------------------------
 
 
 
